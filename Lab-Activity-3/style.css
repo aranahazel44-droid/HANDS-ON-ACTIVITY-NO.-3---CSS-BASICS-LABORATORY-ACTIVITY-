@@ -1,0 +1,159 @@
+/* Reset default margins and padding for consistency */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base Body Styling - System Font & Smooth Scrolling */
+html {
+    scroll-behavior: smooth; /* Meets requirement for smooth internal scrolling */
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    color: #333333;
+    line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+    background-color: #000080; /* Dark blue matching the sample */
+    color: #ffffff;
+    padding: 25px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+
+/* Navigation Menu */
+nav {
+    background-color: #f5ead5; /* Beige matching the sample */
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333333;
+    margin: 0 40px;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #000080;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Main Content Wrapper */
+main {
+    max-width: 1100px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+/* Article Headings */
+article > h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #000;
+}
+
+/* Horizontal Dividers */
+.section-divider {
+    border: 0;
+    border-top: 1px solid #777;
+    margin: 40px 0;
+}
+
+/* Profile Section Styling */
+.profile-section {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+}
+
+.profile-image-box img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border: 1px solid #333; /* Square border like the sample */
+}
+
+.profile-details p {
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+/* Two-Column Layouts (Grid) */
+.biography-columns, .hobbies-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.col h3 {
+    font-size: 16px;
+    margin: 15px 0 10px 0;
+    color: #000;
+}
+
+.col p {
+    font-size: 13px;
+    text-align: justify; /* Requirement: text is justified */
+    margin-bottom: 15px;
+}
+
+/* Hobbies Lists */
+.hobbies-columns ul {
+    list-style-type: square;
+    margin-left: 20px;
+}
+
+.hobbies-columns li {
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+/* Favorites Section Styling */
+.favorite-item {
+    margin-bottom: 30px;
+}
+
+.favorite-item h3 {
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.favorite-content {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.favorite-content img {
+    width: 200px;
+    height: auto;
+    background-color: #ddd; /* Placeholder background */
+}
+
+.favorite-content p {
+    font-size: 13px;
+    text-align: justify;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #f1f1f1;
+    margin-top: 50px;
+    font-size: 13px;
+    color: #555;
+}
